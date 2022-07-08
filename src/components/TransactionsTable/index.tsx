@@ -16,7 +16,7 @@ export function TransactionTable() {
 
   useEffect(() => {
     api
-      .get("http://localhost:3000/api/transactions")
+      .get("transactions")
       .then((response) => setTransactions(response.data.transactions));
   }, []);
 
